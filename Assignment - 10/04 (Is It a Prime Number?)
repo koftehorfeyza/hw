@@ -1,4 +1,4 @@
-number=str(input("Give a number= "))
+number=int(input("Give a number= "))
 for i in range(3,10,1):
   i= i+1
   if number % i == 0:
