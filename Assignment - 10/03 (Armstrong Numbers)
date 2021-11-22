@@ -1,0 +1,15 @@
+while True:
+  number= input("enter a pozitive and integer number= ")
+  digits=len(number)
+  summ=0
+  if not number.isdigit(): #false
+    print(number, " is invalid entry. Enter valid input.")
+  elif int(number) >= 0 :
+    for i in range(digits):
+      summ= summ + int(number[i])**digits
+    if summ == int(number):
+      print(number, "is an armstrong number")
+      break
+    else:
+      print(number, "is not an armstrong number") 
+      break
