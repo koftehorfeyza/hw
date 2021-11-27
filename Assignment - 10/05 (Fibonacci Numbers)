@@ -1,0 +1,11 @@
+def fibonacci(n):
+  line = [0,1]
+
+  for i in range(2,n+1):
+    next_num = line[-1] + line[-2]
+
+    line.append(next_num)
+  return line
+
+line = fibonacci(10)
+print(line)
